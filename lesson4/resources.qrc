@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/ndoc.png</file>
+        <file>img/save.png</file>
+        <file>img/open.png</file>
+        <file>img/lang.png</file>
+        <file>img/exit.png</file>
+        <file>img/hatkey.png</file>
+        <file>img/editing.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>img/save.png</file>
+        <file>lang/QtLanguage_en.qm</file>
+        <file>lang/QtLanguage_ru.qm</file>
+    </qresource>
+    <qresource prefix="/lang"/>
+</RCC>
