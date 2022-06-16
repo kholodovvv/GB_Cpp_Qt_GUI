@@ -5,8 +5,6 @@
 #include <QCoreApplication>
 #include <QStringListModel>
 
-#include "datalist.h"
-
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -31,6 +29,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QString icon_path = QCoreApplication::applicationDirPath() + "/img/";
+    QString icon_path = ":/img/";
 };
 #endif // MAINWINDOW_H

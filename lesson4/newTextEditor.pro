@@ -15,9 +15,6 @@ SOURCES += \
 HEADERS += \
     mainwindow.h
 
-FORMS += \
-    mainwindow.ui
-
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
@@ -25,3 +22,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     resources.qrc
+
+TRANSLATIONS += QtLanguage_ru.ts QtLanguage_en.ts
+CODECFORSRC = UTF-8
