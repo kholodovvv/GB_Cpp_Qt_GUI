@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -9,14 +9,17 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    changethemewindow.cpp \
+    contextmenuwindow.cpp \
+    hotkeywindow.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    changethemewindow.h \
+    contextmenuwindow.h \
+    hotkeywindow.h \
     mainwindow.h
-
-FORMS += \
-    mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -25,3 +28,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     resources.qrc
+
+TRANSLATIONS += QtLanguage_ru.ts QtLanguage_en.ts
+CODECFORSRC = UTF-8
+
+DISTFILES +=
